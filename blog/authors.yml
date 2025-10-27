@@ -1,0 +1,6 @@
+admin:
+  name: Admin
+  title: Site Administrator
+  url: https://github.com
+  image_url: https://github.com/ghost.png
+

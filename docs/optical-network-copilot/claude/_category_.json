@@ -1,0 +1,9 @@
+{
+  "label": "Claude Client",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Claude Client documentation covering architecture, deployment options, LLM server requirements, and integration patterns."
+  }
+}
+

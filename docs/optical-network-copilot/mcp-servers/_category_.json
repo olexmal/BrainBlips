@@ -1,0 +1,9 @@
+{
+  "label": "MCP Servers",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Documentation for the Model Context Protocol (MCP) servers that power the AI Copilot system, including T-API Gateway, Optical Specialist, and Lab Manager servers."
+  }
+}
+
