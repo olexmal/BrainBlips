@@ -83,6 +83,7 @@ const sidebars = {
         'meta/cursor-setup',
         'meta/mcp-servers',
         'meta/project-structure',
+        'meta/ai-skills-system',
       ],
     },
   ],

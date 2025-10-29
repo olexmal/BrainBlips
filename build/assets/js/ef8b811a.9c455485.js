@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocusaurus=self.webpackChunkdocusaurus||[]).push([[8947],{6600:t=>{t.exports=JSON.parse('{"authors":[{"name":"Admin","title":"Site Administrator","url":"https://github.com","imageURL":"https://github.com/ghost.png","key":"admin","page":null,"count":1}]}')}}]);
