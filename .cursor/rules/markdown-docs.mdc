@@ -1,0 +1,22 @@
+---
+description: Markdown conventions for documentation
+globs: docs/**/*.md
+alwaysApply: false
+---
+
+# Markdown Documentation
+
+## Headings
+- `#` for page title, `##` for main sections, `###` for subsections
+
+## Links
+- Internal: `[text](path)` with relative paths (e.g. `[Guide](guide/)`)
+- External: full URL
+
+## Code
+- Fenced blocks: ` ```language` with language tag
+- Inline: `` `code` ``
+
+## Other
+- Use lists, tables, and emphasis consistently
+- Keep paragraphs short; use bullet points for scannability

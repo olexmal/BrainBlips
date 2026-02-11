@@ -1,0 +1,26 @@
+---
+description: Docsify structure, config, and conventions
+globs: docs/**/*
+alwaysApply: false
+---
+
+# Docsify Conventions
+
+## Structure
+- `docs/` is the docs root; `index.html` is the entry point
+- `README.md` = home page; `path.md` or `path/README.md` for other pages
+- `_sidebar.md` defines navigation
+
+## index.html Config
+- Use `loadSidebar: true` for sidebar navigation
+- Set `name` for the site title
+- Pin CDN to `@4` for stable updates (e.g. `docsify@4`)
+
+## Sidebar Format (_sidebar.md)
+```markdown
+* [Label](path)
+  * [Nested](path/nested)
+```
+
+## Mermaid Diagrams
+Use fenced code blocks with `mermaid` language tag.

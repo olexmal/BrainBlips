@@ -1,0 +1,25 @@
+---
+description: Mermaid diagram syntax and rendering rules
+globs: docs/**/*.md
+alwaysApply: false
+---
+
+# Mermaid Diagrams
+
+## Node IDs and Labels
+- No spaces in node IDs: use `camelCase`, `PascalCase`, or `_underscores`
+- Special chars in labels: wrap in quotes `A["Process (main)"]`
+- Avoid reserved IDs: `end`, `subgraph`, `graph`, `flowchart`
+
+## Subgraphs
+- Syntax: `subgraph id [Label]` (use explicit ID, no spaces)
+
+## Edge Labels
+- Special chars: wrap in quotes `A -->|"O(1) lookup"| B`
+
+## Prohibited
+- No HTML in labels; use notes or separate nodes
+- No explicit colors or `click` syntax
+
+## Diagram Types
+flowchart, sequenceDiagram, classDiagram, stateDiagram, etc.
