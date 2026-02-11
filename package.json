@@ -2,12 +2,9 @@
   "name": "agentic-ai",
   "version": "0.0.0",
   "scripts": {
-    "docs:serve": "docsify serve docs",
-    "docs:init": "docsify init ./docs",
+    "docs:serve": "cd website && npm run start",
+    "docs:build": "cd website && npm run build",
     "clickup:sync": "node scripts/sync-clickup.mjs"
   },
-  "devDependencies": {
-    "@developerportalsg/docsify-sidebar-collapse": "^2.2.0",
-    "docsify-cli": "^4.4.4"
-  }
+  "devDependencies": {}
 }
