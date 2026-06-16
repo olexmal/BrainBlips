@@ -9,15 +9,21 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+    <header className={clsx('hero', styles.heroBanner)}>
+      <div className={clsx('container', styles.heroInner)}>
+        <p className={styles.heroEyebrow}>Personal knowledge base</p>
+        <h1 className={clsx('hero__title', styles.heroTitle)}>{siteConfig.title}</h1>
+        <p className={clsx('hero__subtitle', styles.heroSubtitle)}>{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--primary button--lg"
             to="/docs/optical-network-copilot/project-overview">
-            Explore Documentation →
+            Optical Network Copilot
+          </Link>
+          <Link
+            className="button button--outline button--lg"
+            to="/docs/docker/introduction">
+            DevOps guides
           </Link>
         </div>
       </div>
@@ -38,4 +44,3 @@ export default function Home() {
     </Layout>
   );
 }
-

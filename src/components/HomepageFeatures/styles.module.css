@@ -1,12 +1,136 @@
 .features {
+  padding: 4rem 0 5rem;
+  width: 100%;
+  background: var(--ifm-background-color);
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto 3rem;
+}
+
+.sectionTitle {
+  margin-bottom: 0.75rem;
+  font-size: 2rem;
+}
+
+.sectionSubtitle {
+  margin: 0;
+  font-size: 1.125rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+}
+
+.featureRow {
+  justify-content: center;
+}
+
+.featureCol {
+  margin-bottom: 1.5rem;
+}
+
+.featureCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.75rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-card-background-color, var(--ifm-background-surface-color));
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.featureCard:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.iconWrap {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.25rem;
+  border-radius: 10px;
+  color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.iconWrap svg {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
+.featureTitle {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.featureDescription {
+  flex: 1;
+  margin: 0 0 1.25rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.featureLink {
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.featureLink:hover {
+  text-decoration: underline;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 3rem;
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 6rem;
+  text-align: center;
+}
+
+.statValue {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ifm-color-primary);
+}
+
+.statLabel {
+  margin-top: 0.35rem;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+@media screen and (max-width: 996px) {
+  .features {
+    padding: 3rem 0 4rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.65rem;
+  }
+
+  .featureCol {
+    margin-bottom: 1rem;
+  }
+}

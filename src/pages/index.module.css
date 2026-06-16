@@ -1,24 +1,97 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
-  padding: 4rem 0;
+  padding: 5rem 0 4.5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-primary-darkest) 0%,
+    var(--ifm-color-primary) 45%,
+    var(--ifm-color-primary-light) 100%
+  );
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.08) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+}
+
+.heroEyebrow {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.heroTitle {
+  margin-bottom: 0.75rem;
+  font-size: 3rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.heroSubtitle {
+  max-width: 36rem;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.95;
 }
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 
+.buttons :global(.button--outline) {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.65);
+}
+
+.buttons :global(.button--outline:hover) {
+  color: var(--ifm-color-primary-darkest);
+  background: #fff;
+  border-color: #fff;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 3rem 1rem 2.5rem;
+  }
+
+  .heroTitle {
+    font-size: 2.25rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.05rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttons :global(.button) {
+    width: 100%;
+    max-width: 20rem;
+  }
+}
