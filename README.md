@@ -34,6 +34,10 @@ The main content of this site documents the **Optical Network AI Copilot** proje
 - Container management basics
 - **Total Files:** 3
 
+### ☸️ Kubernetes
+- K3s cluster setup (3-node, load balancer, Portainer CE)
+- **Total Files:** 1
+
 ### 🔬 Optical Network AI Copilot
 The primary focus of this documentation site, covering:
 - **Core Documentation:** Project overview, architecture, implementation roadmap
@@ -171,6 +175,8 @@ docs/
 │   ├── introduction.md
 │   ├── install-docker.md
 │   └── install-docker-compose.md
+├── Kubernetes/                      # Kubernetes Documentation (1 file)
+│   └── simple_k3s_cluester.md
 ├── optical-network-copilot/         # Main Content (18+ files)
 │   ├── project-overview.md
 │   ├── system-architecture-diagram.md
@@ -198,7 +204,7 @@ docs/
     └── project-structure.md
 ```
 
-**Total Documents:** 26+ markdown files
+**Total Documents:** 27+ markdown files
 
 ---
 
@@ -213,7 +219,7 @@ docs/
   - Theme: Classic preset with custom styling
 
 - **`sidebars.js`** - Navigation sidebar structure
-  - Organized into 4 main categories
+  - Organized into 5 main categories
   - Hierarchical document organization
   - Collapsible sections for Meta Documentation
 
@@ -348,6 +354,7 @@ docusaurus/
 
 ### Getting Started
 - **[Docker Installation](docs/docker/install-docker.md)** - Ubuntu 24.04 setup
+- **[Simple K3s Cluster](docs/Kubernetes/simple_k3s_cluester.md)** - Lightweight Kubernetes setup
 - **[LM Studio with MCP](docs/ai/lm-studio/enhancing-deepseek.md)** - Local AI model setup
 - **[Cursor IDE Setup](docs/meta/cursor-setup.md)** - Development environment
 
@@ -399,11 +406,11 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📊 Project Status
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-![Docs](https://img.shields.io/badge/docs-26%2B%20files-blue)
+![Docs](https://img.shields.io/badge/docs-27%2B%20files-blue)
 ![Migration](https://img.shields.io/badge/migration-complete-success)
 ![Docusaurus](https://img.shields.io/badge/docusaurus-3.9.2-blue)
 
-**Last Updated:** October 23, 2025  
+**Last Updated:** June 16, 2026  
 **Migration Completed:** October 21, 2025  
 **Status:** ✅ Active Development
 

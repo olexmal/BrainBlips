@@ -1,0 +1,21 @@
+---
+description: React pages and components in src/
+globs: src/**/*
+alwaysApply: false
+---
+
+# Site UI (src/)
+
+Custom React code for the Docusaurus site — homepage, components, and global styles.
+
+## Conventions
+
+- Functional components (see `src/pages/index.js`, `src/components/HomepageFeatures/`)
+- CSS modules colocated with components (`*.module.css`)
+- Global theme overrides in `src/css/custom.css`
+
+## When editing
+
+- Match existing import and component patterns.
+- Run `pnpm typecheck` and `pnpm build` after changes.
+- Static assets belong in `static/img/`, not `src/`.

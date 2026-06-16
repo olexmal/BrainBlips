@@ -1,0 +1,39 @@
+---
+description: Docusaurus documentation conventions for docs/ markdown files
+globs: docs/**/*.md
+alwaysApply: false
+---
+
+# Documentation Standards
+
+## New pages checklist
+
+1. Create file in the correct `docs/` category (see `AGENTS.md` for layout).
+2. Add frontmatter:
+
+```yaml
+---
+title: Page Title
+sidebar_position: 1
+---
+```
+
+3. Register the page in `sidebars.js` (path without `.md`, e.g. `docker/introduction`).
+
+## Writing
+
+- Match tone and structure of neighboring docs in the same folder.
+- Use `##` / `###` headers (TOC covers levels 2–4).
+- Use Mermaid for diagrams; Docusaurus admonitions (`:::info`, `:::tip`, `:::warning`) where helpful.
+- Technical guides must be actionable — verify commands before documenting them.
+- Optical Network Copilot docs: check `docs/optical-network-copilot/glossary.md` for terminology.
+
+## Links and filenames
+
+- Use relative paths or valid Docusaurus doc IDs; broken links fail `pnpm build`.
+- New files: **kebab-case** names.
+- Do not rename existing files (e.g. `simple_k3s_cluester.md`) unless explicitly asked.
+
+## MDX caution
+
+`format: 'detect'` is enabled — avoid raw JSX in `.md` files unless the page is intended as MDX.

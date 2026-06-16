@@ -1,0 +1,42 @@
+---
+description: Core Brain Blips project standards — stack, tooling, scope, and git workflow
+alwaysApply: true
+---
+
+# Brain Blips — Core Standards
+
+This is a **Docusaurus 3.9.2** documentation site. Most changes belong in `docs/`, not application code.
+
+## Tooling
+
+- **Package manager:** `pnpm` only (not npm or yarn)
+- **Node:** >= 20 (`nvm use 20`)
+- **Do not edit:** `build/`, `.docusaurus/`, `node_modules/`
+
+## Before finishing
+
+```bash
+pnpm build      # required for doc/link changes (onBrokenLinks: 'throw')
+pnpm typecheck  # when editing src/ or TS/JS config
+```
+
+## Scope
+
+- Minimize diffs; avoid unrelated refactors or files the user did not ask for.
+- Do not add tests unless requested — no test suite exists today.
+- Do not create extra markdown files (READMEs, summaries) unless asked.
+
+## Git
+
+- Commit and push **only when the user explicitly asks**.
+- Never commit secrets (`.env*`, API keys, tokens).
+
+## Content areas
+
+| Path | Purpose |
+|------|---------|
+| `docs/optical-network-copilot/` | Primary project docs |
+| `docs/ai/`, `docs/docker/`, `docs/Kubernetes/` | Supporting guides |
+| `docs/meta/` | Tooling and project meta |
+
+See `AGENTS.md` for full agent instructions.

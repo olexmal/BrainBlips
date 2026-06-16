@@ -1,0 +1,20 @@
+---
+description: Docusaurus site configuration — docusaurus.config.js and sidebars.js
+globs: docusaurus.config.js
+alwaysApply: false
+---
+
+# Docusaurus Config
+
+`docusaurus.config.js` controls site-wide behavior. Key settings in this project:
+
+- `onBrokenLinks: 'throw'` — any bad link fails the build
+- Mermaid enabled via `markdown.mermaid` and `@docusaurus/theme-mermaid`
+- `markdown.format: 'detect'` — auto-detect MD vs MDX
+- Theme: classic preset; custom CSS at `src/css/custom.css`
+
+## When editing
+
+- Keep changes scoped to what the user requested (navbar, footer, plugins, theme).
+- After config changes, run `pnpm build` to verify.
+- Update placeholder URLs (`url`, `organizationName`, `editUrl`) only when the user asks.

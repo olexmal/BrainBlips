@@ -38,6 +38,12 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Kubernetes',
+      collapsed: false,
+      items: ['Kubernetes/simple_k3s_cluester'],
+    },
+    {
+      type: 'category',
       label: 'Optical Network AI Copilot',
       collapsed: false,
       items: [

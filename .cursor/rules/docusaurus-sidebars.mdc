@@ -1,0 +1,31 @@
+---
+description: Sidebar navigation structure in sidebars.js
+globs: sidebars.js
+alwaysApply: false
+---
+
+# Sidebar Navigation
+
+`sidebars.js` defines the docs sidebar (`tutorialSidebar`). Pages are **not** auto-discovered — each doc must be listed explicitly.
+
+## Adding a page
+
+Use the doc path without extension, matching the file under `docs/`:
+
+```js
+'docker/introduction'                    // docs/docker/introduction.md
+'optical-network-copilot/project-overview'
+'optical-network-copilot/mcp-servers/lab-manager/index'  // index.md in folder
+```
+
+## Categories
+
+Follow the existing structure:
+
+- AI & Machine Learning
+- Docker
+- Kubernetes
+- Optical Network AI Copilot (with nested Claude, MCP Servers, Prompt Filtering)
+- Meta Documentation
+
+Place new items in the matching category. Set `collapsed` to match siblings.
